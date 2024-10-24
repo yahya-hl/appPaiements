@@ -13,7 +13,7 @@
             this.numeroCarte = numeroCarte;
 
         } 
-        public new void AfficherDetaills()
+        public new void AfficherDetaillscredit()
         {
             Console.WriteLine($"Montant : {Montant}");
             Console.WriteLine($" Description : {Description}");

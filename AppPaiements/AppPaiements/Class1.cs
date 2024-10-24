@@ -20,7 +20,8 @@ namespace AppPaiements
 
         public void AfficherDetaills()
         {
-            Console.WriteLine($"Montant : {Montant}, Description : {Description}");
+            Console.WriteLine($"Montant : {Montant}");
+            Console.WriteLine($" Description : {Description}");
 
 
 
