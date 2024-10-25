@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace AppPaiements
 {
-    internal class Paypal : Paiement
+    internal class paypal : paiement
     {
 
         public  string email {  get; set; }
-        public Paypal(double Montant, string Description, string email)
+        public paypal(double Montant, string Description, string email)
             : base(Montant, Description)
         {
             this.email = email;
         }
-        public  void AfficherDetaillsPaypal()
+        public virtual  void AfficherDetaillsPaypal()
         {
             Console.WriteLine($"Montant : {Montant}");
             Console.WriteLine($" Description : {Description}");

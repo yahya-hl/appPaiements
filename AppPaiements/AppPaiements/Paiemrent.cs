@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace AppPaiements
 {
-    public class Paiement
+    public class paiement
     {
         public double Montant { get; set; }
         public string Description { get; set; }
 
-        public Paiement(double Montant, string Description)
+        public paiement(double Montant, string Description)
         {
             this.Montant = Montant;
             this.Description = Description;
 
         }
 
-        public void AfficherDetaills()
+        public  void AfficherDetaills()
         {
             Console.WriteLine($"Montant : {Montant}");
             Console.WriteLine($" Description : {Description}");

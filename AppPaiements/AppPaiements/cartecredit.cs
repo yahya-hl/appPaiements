@@ -1,19 +1,19 @@
 ﻿namespace AppPaiements
 {
-    public class CarteCredit : Paiement
+    public class CarteCredit : paiement
     {
 
         public long numeroCarte {  get; set; }
 
 
 
-        public CarteCredit(long numeroCarte, double Montant, string Description)
+        public CarteCredit(double Montant,long numeroCarte, string Description)
             : base(Montant,Description)
         {
             this.numeroCarte = numeroCarte;
 
         } 
-        public new void AfficherDetaillscredit()
+        public  void AfficherDetaillscredit()
         {
             Console.WriteLine($"Montant : {Montant}");
             Console.WriteLine($" Description : {Description}");

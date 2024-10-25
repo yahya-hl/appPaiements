@@ -6,28 +6,31 @@ using System.Threading.Tasks;
 
 namespace AppPaiements
 {
-    internal class Utilisateur 
+    public class Utilisateur
     {
-        public string nom { set; get; }
-        public List<Paiement> paiements { set; get; }
+        public string Nom { get; set; }
+        public List<paiement> Paiements { get; set; }
 
-        public Utilisateur(string nom, List<Paiement> paiements)
+        public Utilisateur(string nom)
         {
-            this.nom = nom;
-            this.paiements = new List<Paiement>() ;
+            this.Nom = nom;
+            this.Paiements = new List<paiement>();
         }
-        public void afficherInfos()
+
+        public  void AfficherInfos()
         {
-            Console.WriteLine($"nom : {nom}");
-            Console.WriteLine("list de paiement : ");
-            foreach (Paiement p in paiements)
+            Console.WriteLine($"Nom : {Nom}");
+            Console.WriteLine("Liste des paiements : ");
+            foreach (paiement p in Paiements)
             {
-                p.AfficherDetaills();
+                p.AfficherDetaills();  
             }
         }
-        public void ajouterPaiement (Paiement paiement)
+
+        public  void AjouterPaiement(paiement p)
         {
-            paiements.Add(paiement);
+            Paiements.Add(p);
         }
     }
+
 }
